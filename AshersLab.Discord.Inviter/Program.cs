@@ -30,7 +30,7 @@ builder.AddDiscordService(
         return configuration.GetValue<string?>("BotToken") ??
                throw new InvalidOperationException
                (
-                   "No bot token has been provided. Set the REMORA_BOT_TOKEN environment variable to a " +
+                   "No bot token has been provided. Set the BOTTOKEN environment variable to a " +
                    "valid token."
                );
     }
