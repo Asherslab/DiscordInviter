@@ -19,3 +19,6 @@ Appsettings.json or ENV variables
 | `Invite.LogChannel` | `Invite__LogChannel` | `Nullable<ulong>` | Channel to log all invite creations to, if not set: doesn't log                 |
 
 Built container available at https://hub.docker.com/r/asherslab/dockerinviter
+
+E.G. docker run command:
+`docker run -e "BotToken=<Token>" -e "GuildId=<Guild Id>" -e "Invite__MaxAge=20" -e "Invite__LogChannel=<ChannelId>" asherslab/dockerinviter`
